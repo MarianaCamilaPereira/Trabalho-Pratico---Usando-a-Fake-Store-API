@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header py-3 px-5 d-flex gap-3 justify-content-between items-center flex-wrap">
+        <a class="logo text-decoration-none text-white" href="#">Start Bootstrap</a>
+        <a href="#" class="hamburguer-icon d-block d-md-none"><img src="hamburguer.png" alt="hamburguer menu"
+                class="w-100"></a>
+        <nav class="nav-bar d-none d-md-block">
+            <ul class="menu d-flex gap-3">
+                <li><a class="ativo nav-item inline text-decoration-none text-white" href="#">Home</a></li>
+                <li><a class="nav-item inline text-decoration-none" href="#">About</a></li>
+                <li><a class="nav-item inline text-decoration-none" href="#">Services</a></li>
+                <li><a class="nav-item inline text-decoration-none" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="grid-container row g-4 py-3 px-5">
+        <div class="col-12 col-md-3">
+            <div class="left-menu d-flex flex-column gap-3">
+                <!-- span contém texto -->
+                <span class="titulo">
+                    Shop Name
+                </span>
+                <ul class="lista-categorias rounded oveflow-hidden">
+                    <a href="#">
+                        <li class="categorias d-block p-3">
+                            Category 1
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="categorias d-block p-3">
+                            Category 2
+                        </li>
+                    </a>
+                    <a href="#">
+                        <li class="categorias d-block p-3">
+                            Category 3
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-12 col-md-9">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="https://source.unsplash.com/random/900x370"
+                            alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://source.unsplash.com/random/900x370" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="https://source.unsplash.com/random/900x370"
+                            alt="Terceiro Slide">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="shop-items row pt-4 g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card rounded oveflow-hidden">
+                        <img src="https://source.unsplash.com/random/700x400" alt="imagem" class="w-100">
+                        <div class="card-content d-flex flex-column gap-2 p-3">
+                            <span class="item-title">
+                                <a href="#">
+                                    Item One
+                                </a>
+                            </span>
+                            <span class="item-price">
+                                $24.99
+                            </span>
+                            <span class="item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo pariatur porro quibusdam
+                                dolore
+                                odio consequuntur soluta quasi velit beatae!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card rounded oveflow-hidden">
+                        <img src="https://source.unsplash.com/random/700x400" alt="imagem" class="w-100">
+                        <div class="card-content d-flex flex-column gap-2 p-3">
+                            <span class="item-title">
+                                <a href="#">
+                                    Item Two
+                                </a>
+                            </span>
+                            <span class="item-price">
+                                $24.99
+                            </span>
+                            <span class="item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo pariatur porro quibusdam
+                                dolore
+                                odio consequuntur soluta quasi velit beatae!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="card rounded oveflow-hidden">
+                        <img src="https://source.unsplash.com/random/700x400" alt="imagem" class="w-100">
+                        <div class="card-content d-flex flex-column gap-2 p-3">
+                            <span class="item-title">
+                                <a href="#">
+                                    Item Three
+                                </a>
+                            </span>
+                            <span class="item-price">
+                                $24.99
+                            </span>
+                            <span class="item-text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo pariatur porro quibusdam
+                                dolore
+                                odio consequuntur soluta quasi velit beatae!
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
