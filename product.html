@@ -43,25 +43,20 @@
             </div>
         </nav>
     </header>
-    <div class="grid-container row g-4 py-3 px-5">
-        <div class="col-12 col-md-3">
-            <div class="left-menu d-flex flex-column gap-3">
-                <!-- span contém texto -->
-                <span class="titulo">
-                    Thrift shop
-                </span>
-                <ul class="lista-categorias rounded oveflow-hidden">
-                </ul>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-6" id="image-container">
             </div>
-        </div>
-
-        <div class="col-12 col-md-9">
-            <div class="shop-items row pt-4 g-4">
+            <div class="col-md-6">
+                <h2 id="product-name"></h2>
+                <p id="product-description"></p>
+                <p id="product-price"></p>
+                <button class="btn btn-primary">Add to cart</button>
             </div>
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="./assets/js/product.js"></script>
 </body>
 
 </html>
